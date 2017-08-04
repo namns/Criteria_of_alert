@@ -11,7 +11,7 @@ use App\Http\Requests;
 class HomeController extends Controller
 {
     public function index(Request $request){
-        $criteria = Criteria::orderBy('id', 'ASC')->paginate(10);;
+        $criteria = Criteria::orderBy('id', 'ASC')->paginate(10);
         return view('criteria',['criteria' => $criteria]);
     }
     public function deleteRecruit(Request $request){
@@ -38,6 +38,24 @@ class HomeController extends Controller
     }
     public function addcriteria(){
         return view('addcriteria');
+    }
+    public function search(Request $request){
+        $code = $request->input('code');
+        $title = $request->input('title');
+        $status = $request->input('status');
+        if ($code != "" && $title != ""){
+             $search = Criteria::where('code', 'like', '%'.$code.'%')->where('title', 'like', '%'.$title.'%')->where(['status' => intval($status)])->get();
+        }
+        elseif($code != "" && $title == ""){
+           $search = Criteria::where('code', 'like', '%'.$code.'%')->where('status' , intval($status))->get();
+        }
+        elseif($code == "" && $title != ""){
+            $search = Criteria::where('title', 'like', '%'.$title.'%')->where('status' , intval($status))->get();
+        }
+        else{
+            $search = Criteria::where('status',intval($status))->get();
+        }
+        return view('search',['search' => $search]);
     }
     public function saveCriteria(saveCriteriaRequest $request){
         $input = $request->all();

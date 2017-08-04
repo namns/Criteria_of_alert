@@ -32,7 +32,7 @@
             </div>
             <div class="panel-body">
                 <div class="csv-column">
-                    <form action="{{route('get.criteria')}}" method="get" class="form-horizontal">
+                    <form action="{{route('search.criteria')}}" method="get" class="form-horizontal">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card-block">
@@ -52,7 +52,6 @@
                                         <label style="width: 10%;padding-left: 28px;" class="col-md-1 form-control-label" for="select">Trạng thái</label>
                                         <div class="col-md-10" style="width: 30%;padding-left: 5px;">
                                             <select id="select" name="status" class="form-control form-control-sm">
-                                                <option >Chọn trạng thái</option>
                                                 <option value="0">Không hiệu lực</option>
                                                 <option value="1">Hiệu lực</option>
                                             </select>

@@ -15,6 +15,7 @@
 //    return view('welcome');
 //});
 Route::get('/', ['as' => 'get.criteria', 'uses' => 'HomeController@index']);
+Route::get('/search', ['as' => 'search.criteria', 'uses' => 'HomeController@search']);
 Route::get('/addcriteria', ['as' => 'addcriteria', 'uses' => 'HomeController@addcriteria']);
 Route::post('/deleteRecruit', ['as' => 'deleteRecruit', 'uses' => 'HomeController@deleteRecruit']);
 Route::post('/saveCriteria', ['as' => 'saveCriteria', 'uses' => 'HomeController@saveCriteria']);
