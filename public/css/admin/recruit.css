@@ -1,0 +1,101 @@
+/* CSS Document */
+
+
+.main-wrap {
+  margin: 0 20px;
+  min-width: 1200px;
+}
+
+.panel-heading {
+  color: #999 !important;
+}
+
+.csv-column {
+  background-color: #F5F5F5;
+}
+
+.csv-column {
+  padding: 10px 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.csv-column table {
+  margin: 0;
+}
+
+.csv-column table tr th,
+.csv-column table tr td {
+  border-top: none;
+  vertical-align: middle;
+}
+
+
+.list-column .count p {
+  line-height: 34px;
+}
+
+.list-column .pagination {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.list-column table tr th,
+.list-column table tr td {
+  vertical-align: middle;
+}
+
+.list-column table tr th.id-column {
+  width: 50px;
+}
+
+.list-column table tr th.code-column {
+  width: 100px;
+}
+
+.list-column table tr th.category-column {
+  width: 150px;
+}
+
+.list-column table tr th.status-column {
+  width: 80px;
+}
+
+.list-column table tr th.url-column {
+  width: 150px;
+}
+
+.list-column table tr td.btn-column {
+  width: 400px;
+}
+
+.list-column table tr td.btn-column button {
+  margin-right: 10px;
+}
+
+.list-column table tr td.btn-column button:last-child {
+  margin-right: 0;
+}
+
+.modal table tr th,
+.modal table tr td {
+}
+
+.modal table tr th {
+  vertical-align: middle;
+}
+
+.modal table tr td .image {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #CCC;
+  margin-top: 10px;
+}
+
+.csv-modal .status-column {
+  width: 100px; 
+}
+
+.csv-modal .id-column {
+  width: 80px; 
+}

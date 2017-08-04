@@ -1,0 +1,794 @@
+@charset "utf-8";
+/* CSS Document */
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+ 
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1em;
+	font-family: "メイリオ", Meiryo, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Osaka, 'MS PGothic', arial, helvetica, sans-serif!important;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+nav ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+/* change colours to suit your needs */
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+/* change colours to suit your needs */
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* change border colour to suit your needs */
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+input, select {
+	vertical-align: middle;
+}
+ul {
+	list-style-type: none;
+}
+/*
+ * "ほのか明朝" licensed under the IPA Font License Agreement v1.0
+ * http://font.gloomy.jp/honoka-mincho-dl.html（配布元のURL）
+ * http://ipafont.ipa.go.jp/（IPAフォントのURL）
+ * http://ipafont.ipa.go.jp/ipa_font_license_v1.html（IPAフォントライセンスv1.0のURL）
+ */
+@font-face {
+	font-family: "Honoka";
+	src: url(../font/font_1_honokamin.woff);
+}
+.honoka {
+	font-family: "Honoka";
+}
+/*
+ * "こころ明朝体" licensed under the IPA Font License Agreement v1.0
+ * http://typingart.net/（配布元のURL）
+ * http://ipafont.ipa.go.jp/（IPAフォントのURL）
+ * http://ipafont.ipa.go.jp/ipa_font_license_v1.html（IPAフォントライセンスv1.0のURL）
+ */
+@font-face {
+	font-family: "kokoro";
+	src: url(../font/kokoro.woff);
+}
+
+/*画像サイズ*/
+@media (max-width: 1024px) {
+.md-res-img {
+	width: 100%;
+	height: auto;
+}
+}
+
+@media (max-width: 768px) {
+.sm-res-img {
+	width: 100%;
+	height: auto;
+}
+}
+@media (max-width: 767px) {
+.res-img {
+	width: 100%;
+	height: auto;
+}
+}
+/*CSS*/
+.wrap {
+	overflow: hidden;
+}
+/***** header ****/
+.summary {
+	text-align: center;
+	background-color: #c32933;
+	color: white;
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 0;
+}
+
+@media (max-width: 768px) {
+.summary {
+	font-size: 10px;
+}
+}
+.header-right-inner {
+	margin-top: 10px;
+}
+.header-right-inner .left {
+	margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+.header-right-inner .left {
+	padding-right: 0;
+}
+}
+.header-right-inner .left p {
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+.header-right-inner .left p {
+	font-size: 11px;
+}
+}
+.header-right-inner .left p span {
+	font-size: 27px;
+	font-weight: bold;
+	color: #c32933;
+	line-height: 0.704;
+}
+
+@media (max-width: 768px) {
+.header-right-inner .left p span {
+	font-size: 24px;
+	line-height: 27px;
+}
+}
+.header-right-inner .right p {
+	color: #c32933;
+	font-size: 10px;
+	text-align: center;
+}
+.header-right-inner .right p span {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+@media (max-width: 768px) {
+.header-right-inner .right {
+	padding-left: 10px;
+	padding-right: 0px;
+}
+.header-right-inner .right p span {
+	font-size: 12px;
+}
+}
+/*ナビゲーション*/
+.dropmenu {
+	list-style-type: none;
+	margin-bottom: 20px;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
+
+@media (max-width: 768px) {
+.dropmenu {
+	width: 100%;
+}
+}
+.dropmenu li {
+	width: 16.55%;
+}
+
+@media (max-width: 768px) {
+.dropmenu li {
+	width: 16.6%;
+}
+}
+.dropmenu li.nav-first {
+	width: 16.85%;
+}
+.dropmenu:before, .dropmenu:after {
+	content: "";
+	display: table;
+}
+.dropmenu:after {
+	clear: both;
+}
+.dropmenu li {
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#fade-in2 {
+	margin-top: 20px;
+}
+.dropmenu li a {
+	display: block;
+	margin: 0;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1;
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+.dropmenu li a {
+	font-size: 10px;
+}
+}
+.dropmenu li ul {
+	list-style: none;
+	position: absolute;
+	z-index: 9999;
+	top: 100%;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+.dropmenu li ul li {
+	width: 100%;
+}
+.dropmenu li ul li a {
+	padding: 20px 10px;
+	border-top: 1px solid transparent;
+	background: #49297f;
+	text-align: left;
+}
+.dropmenu li:hover > a {
+	opacity: 0.8;
+	background-color: #8d4ff6;
+}
+#normal li ul {
+	display: none;
+}
+#normal li:hover ul {
+	display: block;
+}
+li .drop li {
+	width: 100%;
+}
+.drop {
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+li .drop li {
+	width: 130px!important;
+}
+}
+#fade-in2 li ul {
+	opacity: 0;
+	top: 50%;
+	visibility: hidden;
+	transition: .5s;
+	background-color: #49297f;
+}
+#fade-in2 li a {
+	transition: .5s;
+}
+#fade-in2 li:hover ul {
+	top: 100%;
+	visibility: visible;
+	opacity: 1;
+}
+/*スマホナビ*/
+.sm-nav {
+	width: 100%;
+	text-align: center;
+	height: auto;
+}
+@media (max-width: 767px) {
+#site-menu {
+	padding: 0;
+}
+#site-menu .navbar-nav {
+	margin: 0;
+}
+}
+#sm-main .navbar {
+	background-color: #c32933;
+	border-bottom: black solid 1px;
+}
+#sm-main .container-fluid{
+	margin-top:-15px;
+	margin-bottom:5px;
+}
+#sm-main .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background-color: #c32933;
+}
+#sm-main .navbar-default .navbar-nav > li > a{
+	color:white;
+}
+#sm-main .navbar-default .navbar-nav > .active > a{
+	background-color:#a0333b;
+}
+#sm-main .btn-waku{
+	overflow:hidden;
+}
+#sm-main .btn-left{
+	float:left;
+	margin-left:15px;
+}
+#sm-main .btn-right{
+	float:right;
+	margin-right:15px;
+}
+/*パンくずリスト*/
+.pan-kuzu {
+	background-color: #eeeeee;
+	font-size: 12px;
+	font-family: "Meiryo";
+	color: rgb(27, 27, 27);
+}
+
+@media (max-width: 767px) {
+.pan-kuzu {
+	margin-top: 60px;
+}
+}
+.pan-kuzu .container p {
+	margin: 0 0 0 60px;
+	line-height: 2.5;
+}
+@media (max-width: 767px) {
+.pan-kuzu .container p {
+	margin: 0 0 0 10px;
+}
+}
+.pan-kuzu .container p a {
+	color: rgb(27, 27, 27);
+}
+/**** メインコンテンツ ****/
+@media (max-width: 767px) {
+.main-img{
+	width:140%;
+	height:auto;
+	position:relative;
+	right:70px;
+}
+}
+/* 記事一覧*/
+.contents-list {
+	margin-top: 30px;
+}
+.contents-list h2.title {
+	font-size: 30px;
+	font-family: "Meiryo";
+	color: rgb(49, 49, 49);
+	font-weight: bold;
+	line-height: 1.333;
+	text-align: left;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.blog-waku .left {
+	border-top: solid 2px #c32933;
+	padding-top: 60px;
+}
+@media (max-width: 767px) {
+.blog-waku .left {
+	padding-top: 30px;
+}
+}
+hr {
+	border-top: 1px solid #d2d2d2!important;
+}
+.blog-inner h3 {
+	font-weight: bold;
+	font-size: 21px;
+	margin-bottom: 20px;
+}
+.blog-inner h3 a {
+	color: #434343;
+}
+.page-nation {
+	border-bottom: 1px solid #d2d2d2;
+	border-top: 1px solid #d2d2d2;
+	text-align: center;
+}
+@media (max-width: 767px) {
+.page-nation {
+	margin-bottom:30px;
+}
+}
+.page-nation p {
+	margin: 0;
+	line-height: 2.5;
+}
+@media (max-width: 767px) {
+.page-nation p {
+font-size:11px;
+}
+}
+.page-nation p a {
+	color: #434343;
+}
+.page-nation p span {
+	color: #d2d2d2;
+}
+/* ライトナビ */
+@media (max-width: 767px) {
+.right-nav {
+	margin-bottom:30px;
+}
+}
+.right-nav dl {
+	width: 90%;
+	margin: 0 auto;
+}
+.right-nav dl dt {
+	background-color: #c32933;
+	color: white;
+	font-size: 14px;
+	line-height: 2.7;
+	padding-left: 1em;
+}
+.right-nav dl dd {
+	background-color: #eeeeee;
+	padding: 1em;
+	line-height: 1.7;
+}
+.right-nav dl dd a {
+	color: #313131;
+}
+/*カレンダー*/
+.calendar {
+	border-collapse: collapse;
+	width: 90%;
+	margin: 0 auto;
+	background-color: white;
+}
+.calendar caption {
+	padding-top: 0;
+	padding-bottom: 6px;
+	font-size: 15px;
+	text-align: center;
+}
+.calendar th, .calendar td {
+	font-size: 15px;
+	border: 1px solid #bbb;
+	text-align: center;
+	line-height: 30px
+}
+.calendar th {
+	background: #ddedf8;
+}
+.calendar th:first-child {
+	color: #f30;
+}
+.calendar th:last-child {
+	color: #03c;
+}
+.calendar td div {
+	text-align: center
+}
+.today {
+	background: #fffbcc
+}
+.saturday {
+	background: #f3f9fd;
+}
+.sunday {
+	background: #fff5f2;
+}
+.holiday {
+	background: #fff5f2;
+}
+.calendar td a {
+	text-decoration: underline;
+	display: block;
+	width: 100%;
+}
+.calendar td a:hover {
+	background: #fe814d;
+	color: #fff;
+	text-decoration: none
+}
+.calendar td a:active {
+	background: #f30;
+}
+/**** フッター ****/
+
+/* contact */
+.contact {
+	background-image: -moz-linear-gradient( 90deg, rgb(176,175,175) 0%, rgb(216,215,215) 13%, rgb(255,255,255) 65%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(176,175,175) 0%, rgb(216,215,215) 13%, rgb(255,255,255) 65%);
+	background-image: -ms-linear-gradient( 90deg, rgb(176,175,175) 0%, rgb(216,215,215) 13%, rgb(255,255,255) 65%);
+}
+.contact .left {
+	text-align: right;
+}
+.contact .right p.text1 {
+	font-size: 18px;
+	margin-top: 30px;
+}
+@media (max-width: 767px) {
+.contact .right{
+	text-align:center;
+}
+}
+.contact .right p.text1 span {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+@media (max-width: 768px) {
+.contact .right p.text1 span {
+	font-size: 19px;
+	font-weight: bold;
+}
+}
+.contact .right .tel-number {
+	font-size: 17px;
+}
+
+@media (max-width: 768px) {
+.contact .right .tel-number {
+	font-size: 14px;
+}
+}
+.contact .right .tel-number span {
+	font-size: 40px;
+	color: #c32933;
+	font-weight: bold;
+}
+
+@media (max-width: 768px) {
+.contact .right .tel-number span {
+	font-size: 30px;
+}
+}
+.contact .right .row {
+	margin-top: 5px;
+}
+.contact .right .row .left {
+	padding-left: 0;
+	text-align: left;
+}
+.footer-nav {
+	background-image: url(../img/footer/back.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+	height: 300px;
+	padding-top: 100px;
+	margin-top: -60px;
+	position: relative;
+	z-index: 999;
+}
+@media (max-width: 767px) {
+.footer-nav {
+	margin-top:-20px;
+}
+.footer-nav .container{
+	margin-top:-60px;
+	text-align:center;
+}
+}
+.footer-nav .row .left {
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+.footer-nav .row .right {
+	padding-right: 0;
+}
+}
+.footer-mail{
+	text-align:center;
+	margin:15px 0 50px 0;
+}
+.footer-nav .row .right ul {
+	overflow: hidden;
+	margin-top: 20px;
+	text-align:left;
+}
+.footer-nav .row .right ul li.parent {
+	float: left;
+	width: 33.3333333%;
+}
+.footer-nav .row .right ul li.parent ul li:before {
+	font-family: "Fontawesome";
+	content: "\f0da";
+	margin-right: 10px;
+	color: #c32933;
+}
+.footer-nav .row .right ul li.parent ul li a {
+	color: #1b1b1b;
+	line-height: 2;
+	font-size: 12px;
+}
+
+@media (max-width: 768px) {
+.footer-nav .row .right ul li.parent ul li a {
+	color: #1b1b1b;
+	line-height: 1;
+	font-size: 11px;
+}
+}
+.copy {
+	background-color: #c32933;
+	color: white;
+	text-align: center;
+	line-height: 2;
+}
+/*記事ページ*/
+.blog-kiji .left {
+	padding-top: 15px;
+}
+.category-text {
+	font-size: 18px;
+}
+.right-img {
+	overflow: hidden;
+	width: 100%;
+}
+.text-left {
+	width: 70%;
+	float: left;
+}
+
+@media (max-width: 767px) {
+.text-left {
+	width: 100%;
+	float: none;
+}
+}
+.img-right {
+	width: 25%;
+	float: right;
+}
+
+@media (max-width: 767px) {
+.img-right {
+	width: 100%;
+	float: none;
+}
+}
+.text-right {
+	width: 70%;
+	float: left;
+}
+
+@media (max-width: 767px) {
+.text-right {
+	width: 100%;
+	float: none;
+}
+}
+.img-left {
+	width: 25%;
+	float: right;
+}
+
+@media (max-width: 767px) {
+.img-left {
+	width: 100%;
+	float: none;
+}
+}
+.left-img {
+	overflow: hidden;
+	width: 100%;
+}
+.text-right {
+	width: 70%;
+	float: right;
+	text-align:left!important;
+}
+
+@media (max-width: 767px) {
+.text-right {
+	width: 100%;
+	float: none;
+}
+}
+.img-left {
+	width: 25%;
+	float: left;
+}
+
+@media (max-width: 767px) {
+.img-left {
+	width: 100%;
+	float: none;
+}
+}
+.img-right-long{
+	width:100%;
+	overflow:hidden;
+}
+.img-right-long .text-left{
+	float:none;
+}
+.blog-img-right{
+	padding-left:15px;
+	padding-bottom:15px;
+}
+@media (max-width: 767px) {
+.blog-img-right{
+	padding:0;
+}
+}
+.img-left-long{
+	width:100%;
+	overflow:hidden;
+}
+.img-left-long .text-left{
+	float:none;
+}
+.blog-img-left{
+	padding-left:15px;
+	padding-bottom:15px;
+}
+@media (max-width: 767px) {
+.blog-img-right{
+	padding:0;
+}
+}
+.center-img{
+	text-align:center;
+}
+.writer {
+  border-radius: 10px;
+  background-color: rgb(238, 238, 238);
+  width: 100%;
+  padding:20px;
+}
+.writer .row .left{
+	text-align:center;
+	border-top:none;
+}
+@media (max-width: 767px) {
+.writer .row .left img{
+	margin-bottom:20px;
+}
+}
+.writer .row .right table{
+	margin-top:20px;
+	font-size:16px;
+}
+.writer .row .right table tr th{
+	width:40%;
+	line-height:3;
+}
+.writer .row .right table tr.line{
+	border-top:1px solid #a0a0a0;
+}

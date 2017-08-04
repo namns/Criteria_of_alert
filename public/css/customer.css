@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+.link_box ul li .active {
+	background: #0065b5 url("../img/icon_arrow04.png") no-repeat scroll 10px center;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.bootbox .btn-danger,.btn-warning{
+	margin-right: 5px;
+}
+
+/*@media screen and (max-width: 767px) {*/
+	/*.link_box ul li.category {*/
+		/*padding: 0px 10px 0px 10px;*/
+	/*}*/
+/*}*/

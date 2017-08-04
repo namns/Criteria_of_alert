@@ -1,0 +1,114 @@
+/* CSS Document */
+
+
+.main-wrap {
+  margin: 0 20px;
+  min-width: 1200px;
+}
+
+.panel-heading {
+  color: #999 !important;
+}
+
+.list-column .count p {
+  line-height: 34px;
+}
+
+.list-column .pagination {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.list-column table tr th,
+.list-column table tr td {
+  vertical-align: middle;
+}
+
+.list-column table tr th.id-column {
+  width: 50px;
+}
+
+.list-column table tr th.code-column {
+  width: 100px;
+}
+
+.list-column table tr th.category-column {
+  width: 150px;
+}
+
+.list-column table tr th.status-column {
+  width: 80px;
+}
+
+.list-column table tr th.url-column {
+  width: 150px;
+}
+
+.list-column table tr td.btn-column {
+  width: 400px;
+}
+
+.list-column table tr td.btn-column button {
+  margin-right: 10px;
+}
+
+.list-column table tr td.btn-column button:last-child {
+  margin-right: 0;
+}
+
+.modal table tr th,
+.modal table tr td {
+}
+
+.modal table tr th {
+  vertical-align: middle;
+}
+
+.modal .modal-lg th {
+  width: 20rem;
+}
+
+.list-add {
+  margin-bottom: 20px;
+}
+.post-author input {
+  margin-bottom: 10px;
+}
+.image.image-center {
+  margin: 0 auto 10px;
+}
+a.tips {
+  font-size: 12px;
+}
+.blog-list-tips {
+  text-align: center;
+}
+.well {
+  background-color: #FFF;
+  border: none;
+  box-shadow: none;
+  background-image: none;
+}
+
+.list-add .form-group {
+  background-color: #eee;
+  width: 60%;
+  padding: 10px 0;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.modal table tr td .image {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #CCC;
+  margin-top: 10px;
+}
+
+.csv-modal .status-column {
+  width: 100px;
+}
+
+.csv-modal .id-column {
+  width: 80px;
+}

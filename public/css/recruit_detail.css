@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+#page_recruit_detail { }
+
+/*------col3_box--------*/
+#page_recruit_detail .col3_box ul li { background-color: #f6f6f6; }
+
+
+.movie_box .inner {
+  position: relative;
+  padding-top: 56.25%;
+}
+.movie_box .inner iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.msg_box .img_box p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form table td span.your-sex label,
+.form table td span.your-contact-method label {
+  font-weight: normal;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .col3_box ul li {
+  	width: 100%;
+  	float: none;
+  	margin: 0 0 10px;
+  	overflow: hidden;
+  }
+  .col3_box ul li:nth-child(3n) { margin: 0 0 10px; }
+  .col3_box ul li:last-child { margin-bottom: 0; }
+  .col3_box img {
+  	width: 30%;
+  	display: block;
+  	float: left;
+  }
+  .col3_box span {
+  	width: 70%;
+  	float: right;
+  	padding: 10px;
+  	background-color: #f6f6f6;
+  	box-sizing: border-box;
+  	text-align: left;
+  	font-size: 12px;
+  }
+  .msg_box .img_box p {
+    margin-top: 0;
+    text-align: center;
+  }
+}

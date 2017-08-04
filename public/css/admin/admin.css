@@ -1,0 +1,57 @@
+/* CSS Document */
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background-color: #F5F5F5;
+  -webkit-text-size-adjust: 100%;
+}
+
+footer {
+  margin: 40px 20px 20px;
+  text-align: center;
+  border-top: 1px solid #CCC;
+  padding: 20px;
+}
+
+.panel-heading .table-column {
+  display: table;
+  width: 100%;
+}
+
+.panel-heading .table-column .table-cell {
+  display: table-cell;
+}
+
+.panel-heading .table-column .btn-column {
+  text-align: right;
+}
+
+.panel-heading .table-column .btn-column .btn {
+  margin-left: 10px;
+}
+
+
+.help-block {
+  display: none;
+  margin-bottom: 0;
+}
+
+.has-error .help-block {
+  display: block;
+}
+
+.error-block {
+  color: #a94442;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.label {
+  padding: .2em .6em 0;
+}
+
+.dropdown:hover > .dropdown-menu{
+  display: block;
+}

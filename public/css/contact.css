@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+#page_contact{}
+#page_contact .txt_box{margin-bottom:20px;}
+#page_contact .txt_box:last-child{ margin-bottom:0;}
+#page_contact .col3_box{margin-bottom:10px;}
+
+@media screen and (max-width: 767px) {}
